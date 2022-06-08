@@ -13,7 +13,7 @@ import { join } from 'path';
 @Module({
   imports: [
     ConfigModule.forRoot(),
-    MongooseModule.forRoot(`mongodb+srv://${process.env.MONGODB_USERNAME}:${process.env.MONGODB_PASSWORD}@gonnamove.jclp7.mongodb.net/?retryWrites=true&w=majority`),
+    MongooseModule.forRoot(`mongodb+srv://valentin:MdkJVBwN6AaAzk8C@gonnamove.jclp7.mongodb.net/?retryWrites=true&w=majority`),
     ServeStaticModule.forRoot({ rootPath: join(__dirname, '..', 'pictures'), }),
     UsersModule,
     ActivitiesModule,
