@@ -41,8 +41,6 @@ export class ActivitiesController {
   remove(
     @Request() req,
     @Param('id') id: string) {
-    if (req.user.admin === 1) {
       return this.activitiesService.remove(id);
-    }
   }
 }
